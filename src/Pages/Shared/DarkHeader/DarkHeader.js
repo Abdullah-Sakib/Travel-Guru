@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../../assets/images/Frame.png";
+import logo from "../../../assets/images/logo.png";
 import { AuthContext } from "../../../Context/AuthProvider/AuthProvider";
 
-const Header = () => {
+const DarkHeader = () => {
   const { user, logOut } = useContext(AuthContext);
   const handleLogOut = () =>{
     logOut()
@@ -12,9 +12,9 @@ const Header = () => {
   }
   return (
     <div className="absolute top-0 ml-6 mt-3">
-      <div className="navbar container w-screen text-white">
+      <div className="navbar container w-screen  text-black">
         <div className="flex-1">
-          <Link to='/' className=" normal-case ">
+          <Link to="/" className=" normal-case ">
             <img className="w-32 " src={logo} alt="" />
           </Link>
         </div>
@@ -55,4 +55,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default DarkHeader;

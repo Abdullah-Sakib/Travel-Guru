@@ -4,7 +4,7 @@ import { initializeApp } from "firebase/app";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
-const firebaseConfig = {
+const firebaseConfig = {   
   apiKey: "AIzaSyC18l1lIVwnFWUJxcDyM0aDOwdXctpOdzw",
   authDomain: "travel-guru-8cda2.firebaseapp.com",
   projectId: "travel-guru-8cda2",
